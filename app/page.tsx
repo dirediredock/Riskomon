@@ -10,7 +10,7 @@ import { reorder } from "@atlaskit/pragmatic-drag-and-drop/reorder";
 import { sortModels } from "./sortModels";
 import * as d3 from "d3";
 
-const filenames = ["MAMMO", "ADULT", "BANK", "FICO", "SHROOM", "DEMO"];
+const filenames = ["MAMMO", "ADULT", "BANK", "FICO", "SHROOM"];
 
 export default function Home() {
   const [filename, setFilename] = useState(filenames[0] + ".json");
