@@ -1,0 +1,393 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply text-3xl font-bold;
+  margin-bottom: 10px;
+}
+h2,
+.subtitleHeaderText {
+  @apply text-xl font-bold;
+  margin-bottom: 10px;
+}
+h3 {
+  @apply font-bold;
+  margin-bottom: 1px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  height: 100vh;
+  padding-left: 40px;
+  /* padding-right: 40px; */
+}
+
+.dataPicker {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.colorMapButton {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 10px;
+  padding: 0px 5px;
+  border-radius: 5px;
+  width: 45px;
+}
+
+.featureGrid {
+  display: flex;
+  width: 100%;
+  overflow: auto;
+}
+
+.modelGridContainer {
+  height: 100%;
+}
+
+.modelGrid {
+  display: flex;
+  margin-left: 20px;
+  width: 100%;
+  margin-top: 38px;
+  padding-bottom: 25px;
+}
+
+.modelColumnContainer {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: rgba(245, 245, 220, 0.75);
+  border-radius: 5px;
+}
+
+.modelIndex {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.featureListContainer {
+  background-color: white;
+  position: sticky;
+  left: 0;
+  z-index: 9;
+  min-height: 100%;
+}
+
+.featureList {
+  margin-top: -2px;
+  padding-top: 54px;
+  /* ^ padding-top aligns feature rows with model columns */
+}
+
+.featureList ul {
+  background-color: white;
+}
+
+.featureContainer {
+  height: 25px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  min-width: 250px;
+}
+
+.featureLabel {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.featureContainer:hover {
+  background-color: whitesmoke;
+}
+
+.featureName {
+  flex-grow: 1;
+}
+
+.featureDragPreview {
+  position: absolute;
+  top: -999px; /* Ensure it is not visible when not dragging */
+  background-color: gainsboro;
+  padding: 10px 20px 10px 20px;
+  border-radius: 4px;
+}
+
+.dragHandle {
+  display: flex;
+  flex-grow: 0;
+  cursor: grab;
+  width: 20px;
+  height: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+}
+
+.dragHandle:hover {
+  cursor: grab;
+  background-color: whitesmoke;
+}
+
+.dragHandle:active {
+  cursor: grabbing;
+}
+
+.dragHandleContent {
+  margin: auto;
+}
+
+.modelColumn {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.coefficientContainer {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.coefficient {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: white;
+  background-color: skyblue;
+  border-radius: 100px;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.topCap {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  background-color: skyblue;
+  width: 9px;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.5;
+}
+
+.bottomCap {
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  background-color: skyblue;
+  width: 9px;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.5;
+}
+
+.dot {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: gainsboro;
+  border-radius: 100px;
+  width: 5px;
+  height: 5px;
+}
+
+.line {
+  position: absolute;
+  left: 9px;
+  background-color: skyblue;
+  width: 7px;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.5;
+}
+
+.cardRousel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  z-index: 10;
+  box-shadow: 0px -6px 9px whitesmoke;
+  margin-left: -40px;
+  /* margin-right: -40px; */
+  padding-top: 10px;
+  /* padding-left: 40px; */
+  /* padding-right: 40px; */
+}
+
+.collapseButton {
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 25px; */
+}
+
+.cardConatiner {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  overflow-x: auto;
+  overflow-y: auto;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.noModelsMessage {
+  color: gray;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  padding-bottom: 25px;
+}
+
+.popUpCard {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-width: 300px;
+  border: solid 3px silver;
+  border-radius: 16px;
+  text-align: left;
+  padding: 30px 35px;
+  margin-bottom: 25px;
+  /* margin-left: 25px; */
+  /* margin-right: 5px; */
+}
+
+.modelSelect {
+  border: 3px solid silver;
+  border-radius: 5px;
+}
+
+.featuresCount {
+  color: gray;
+  font-weight: bold;
+  font-family: Courier;
+  font-size: 1.1em;
+}
+
+.modelsCount {
+  color: skyblue;
+  font-weight: bold;
+  font-family: Courier;
+  font-size: 1.1em;
+}
+
+.featureFrequency {
+  color: skyblue;
+  font-weight: bold;
+  font-family: Courier;
+  font-size: 0.8em;
+  width: 25px;
+  text-align: right;
+}
+
+.chartContainer {
+  /* background-color: whitesmoke; */
+  margin-top: -27px;
+  margin-bottom: 13px;
+  width: 300px;
+}
+
+.featureRowVis {
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.featureNameVis {
+  display: flex;
+  justify-content: space-between;
+}
+
+.featureCoeffVis {
+  margin-left: 25px;
+  font-weight: bold;
+  /* font-family: monospace; */
+}
+
+.visPickAxis {
+  background-color: white;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.visColumnAxis {
+  height: 150px;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+}
+
+.landscapeCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#pickAxis {
+  flex-shrink: 0;
+}
+
+.instructions {
+  color: gray;
+  flex-shrink: 1;
+  max-width: 200px;
+  font-style: italic;
+}
+
+.popUpBanner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8em;
+  color: silver;
+  font-weight: bold;
+}
+
+.popUpBannerSelected {
+  color: skyblue;
+  font-weight: bold;
+}
+
+.subtitleHeader {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.subtitleModels {
+  position: absolute;
+  left: 100%;
+}
+
+.emptySpacer {
+  flex-grow: 1;
+}
