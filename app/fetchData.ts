@@ -1,6 +1,10 @@
-"use server";
-import { promises as fs } from "fs";
 import { FeatureCount, ModelData } from "./modelData";
+import adult from "./input_data/ADULT.json";
+import bank from "./input_data/BANK.json";
+import demo from "./input_data/DEMO.json";
+import fico from "./input_data/FICO.json";
+import mammo from "./input_data/MAMMO.json";
+import shroom from "./input_data/SHROOM.json";
 
 interface FetchDataResult {
   models: ModelData[];
@@ -13,14 +17,24 @@ interface FetchDataResult {
   AUC_min: number;
 }
 
-export const fetchData = async (filename: string): Promise<FetchDataResult> => {
-  const fetch = async (fn: String) => {
-    const file = await fs.readFile(
-      process.cwd() + "/app/input_data/" + fn,
-      "utf8"
-    );
-    const data = JSON.parse(file);
-    return data;
+export const fetchData = (filename: string): FetchDataResult => {
+  const fetch = (fn: String): ModelData[] => {
+    switch (fn) {
+      case "ADULT":
+        return adult as ModelData[];
+      case "BANK":
+        return bank as ModelData[];
+      case "DEMO":
+        return demo as ModelData[];
+      case "FICO":
+        return fico as ModelData[];
+      case "MAMMO":
+        return mammo as ModelData[];
+      case "SHROOM":
+        return shroom as ModelData[];
+      default:
+        return [];
+    }
   };
 
   const extractFeatures = (
@@ -92,7 +106,7 @@ export const fetchData = async (filename: string): Promise<FetchDataResult> => {
     };
   };
 
-  const data = await fetch(filename);
+  const data = fetch(filename);
   const models = data;
   const {
     sortedFeatures,

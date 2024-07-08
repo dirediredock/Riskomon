@@ -13,7 +13,7 @@ import * as d3 from "d3";
 const filenames = ["MAMMO", "ADULT", "BANK", "FICO", "SHROOM"];
 
 export default function Home() {
-  const [filename, setFilename] = useState(filenames[0] + ".json");
+  const [filename, setFilename] = useState(filenames[0]);
   const [models, setModels] = useState([] as ModelData[]);
   const [features, setFeatures] = useState([] as FeatureCount[]);
   const [selectedModels, setSelectedModels] = useState(
@@ -40,33 +40,26 @@ export default function Home() {
   }, [features, models]);
 
   useEffect(() => {
-    fetchData(filename)
-      .then(
-        ({
-          models,
-          sortedFeatures,
-          LOSS_max,
-          LOSS_min,
-          ACC_max,
-          ACC_min,
-          AUC_max,
-          AUC_min,
-        }) => {
-          setModels(models);
-          setFeatures(sortedFeatures);
-          setAxisBounds({
-            LOSS_max,
-            LOSS_min,
-            ACC_max,
-            ACC_min,
-            AUC_max,
-            AUC_min,
-          });
-        }
-      )
-      .catch((err) => {
-        console.error(err);
-      });
+    const {
+      models,
+      sortedFeatures,
+      LOSS_max,
+      LOSS_min,
+      ACC_max,
+      ACC_min,
+      AUC_max,
+      AUC_min,
+    } = fetchData(filename);
+    setModels(models);
+    setFeatures(sortedFeatures);
+    setAxisBounds({
+      LOSS_max,
+      LOSS_min,
+      ACC_max,
+      ACC_min,
+      AUC_max,
+      AUC_min,
+    });
     setSelectedModels(new Set());
   }, [filename]);
 
@@ -168,7 +161,7 @@ export default function Home() {
   ]);
 
   const handleModelSelected = (modelFilename: string) => {
-    setFilename(modelFilename + ".json");
+    setFilename(modelFilename);
   };
 
   const reorderFeatures = useCallback(
