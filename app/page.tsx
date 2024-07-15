@@ -20,7 +20,7 @@ export default function Home() {
     new Set<ModelData["card_label"]>()
   );
   const [sortedModels, setSortedModels] = useState([] as ModelData[]);
-  const [useColorMap, setUseColorMap] = useState(false);
+  const [useColorMap, setUseColorMap] = useState(true);
   const [marginalia, setMarginalia] = useState("LOSS");
   const [axisBounds, setAxisBounds] = useState({
     LOSS_max: -1,
@@ -196,7 +196,29 @@ export default function Home() {
           </div>
           <div className="visPickAxis">
             <div className="instructions">
-              Rank the feature rows below to reorder the model columns.
+              Drag important feature rows up and undesired rows down with the
+              <span
+                role="img"
+                style={{ display: "inline-block", verticalAlign: "bottom" }}
+              >
+                <svg
+                  width="20"
+                  height="22"
+                  viewBox="0 0 20 20"
+                  role="presentation"
+                >
+                  <g fill="currentColor" fillRule="evenodd" color="gray">
+                    <circle cx="8" cy="6" r="1.5"></circle>
+                    <circle cx="12" cy="6" r="1.5"></circle>
+                    <circle cx="8" cy="14" r="1.5"></circle>
+                    <circle cx="12" cy="14" r="1.5"></circle>
+                    <circle cx="8" cy="10" r="1.5"></circle>
+                    <circle cx="12" cy="10" r="1.5"></circle>
+                  </g>
+                </svg>
+              </span>
+              handle: the model columns will reorder from left to right
+              accordingly.
             </div>
             <svg
               key={filename + marginalia}
@@ -222,6 +244,7 @@ export default function Home() {
             marginalia={marginalia}
             axisBounds={axisBounds}
             hoveredFeature={hoveredFeature}
+            filename={filename}
           />
         </div>
       </div>
@@ -229,6 +252,7 @@ export default function Home() {
       <CardRousel
         sortedModels={sortedModels}
         selectedModels={selectedModels}
+        setSelectedModels={setSelectedModels}
         marginalia={marginalia}
       />
     </div>

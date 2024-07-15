@@ -5,9 +5,18 @@ import * as d3 from "d3";
 interface PopUpCardProps {
   model: ModelData;
   marginalia: string;
+  removeModel: (cardLabel: string) => void;
 }
 
-export const PopUpCard = ({ model, marginalia }: PopUpCardProps) => {
+export const PopUpCard = ({
+  model,
+  marginalia,
+  removeModel,
+}: PopUpCardProps) => {
+  const handleClose = () => {
+    console.log("CLOSE: Card", model.card_label);
+    removeModel(model.card_label);
+  };
   useEffect(() => {
     const svg = d3.select("svg#card_svg_" + model.card_label);
     const svgNode = svg.node();
@@ -111,30 +120,13 @@ export const PopUpCard = ({ model, marginalia }: PopUpCardProps) => {
       .style("font-weight", "bold")
       .style("font-family", "sans-serif")
       .text("RISK");
-  }, [model.card_label, model.risk_scale]);
-
-  const marginaliaShow = useMemo(() => {
-    if (marginalia === "LOSS") {
-      return "LOSS: " + model.logistic_loss.toFixed(2);
-    } else if (marginalia === "ACC") {
-      return "ACC: " + model.training_accuracy.toFixed(2);
-    } else if (marginalia === "AUC") {
-      return "AUC: " + model.training_AUC.toFixed(2);
-    } else if (marginalia === "RISK") {
-      return "MAX RISK: " + (model.risk_scale[0][1] * 100).toFixed(2) + "%";
-    } else {
-      return "";
-    }
-  }, [
-    marginalia,
-    model.logistic_loss,
-    model.risk_scale,
-    model.training_AUC,
-    model.training_accuracy,
-  ]);
+  }, [model.card_label, model.risk_scale, removeModel]);
 
   return (
-    <div className="popUpCard">
+    <div className="popUpCard" style={{ position: "relative" }}>
+      <button className="buttonCardClose" onClick={handleClose}>
+        ✖️
+      </button>
       <h3>Model {model.card_label} Card</h3>
       <div className="landscapeCard">
         <div className="featureRowVis">
@@ -157,9 +149,6 @@ export const PopUpCard = ({ model, marginalia }: PopUpCardProps) => {
           <svg id={`card_svg_${model.card_label}`} />
         </div>
       </div>
-      {/* <br /> */}
-      {/* {marginaliaShow} */}
-
       <div className="popUpBanner">
         <div
           className={marginalia === "LOSS" ? "popUpBannerSelected" : undefined}
@@ -169,7 +158,7 @@ export const PopUpCard = ({ model, marginalia }: PopUpCardProps) => {
         <div
           className={marginalia === "ACC" ? "popUpBannerSelected" : undefined}
         >
-          ACC: {model.training_accuracy.toFixed(3)}
+          ACC: {model.training_accuracy.toFixed(2)}%
         </div>
         <div
           className={marginalia === "AUC" ? "popUpBannerSelected" : undefined}

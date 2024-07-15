@@ -1,8 +1,9 @@
-import { useCallback, useMemo, useEffect } from "react";
+import { useCallback, useMemo, useEffect, useRef } from "react";
 import { ModelColumn } from "./modelColumn";
 import { FeatureCount, ModelData } from "./modelData";
 
 interface ModelGridProps {
+  filename: string;
   sortedModels: ModelData[];
   features: FeatureCount[];
   selectedModels: Set<ModelData["card_label"]>;
@@ -21,6 +22,7 @@ interface ModelGridProps {
 }
 
 export const ModelGrid = ({
+  filename,
   sortedModels,
   features,
   selectedModels,
@@ -30,10 +32,22 @@ export const ModelGrid = ({
   axisBounds,
   hoveredFeature,
 }: ModelGridProps) => {
+  const initialSelectionDone = useRef(false);
+
+  useEffect(() => {
+    initialSelectionDone.current = false;
+  }, [filename]);
+
+  useEffect(() => {
+    if (sortedModels.length > 0 && !initialSelectionDone.current) {
+      setSelectedModels(new Set([sortedModels[0].card_label]));
+      initialSelectionDone.current = true;
+    }
+  }, [sortedModels, setSelectedModels]);
+
   const handleClick = useCallback(
     (model: ModelData) => {
       let newSelectedModels = new Set(selectedModels);
-
       if (newSelectedModels.has(model.card_label)) {
         newSelectedModels.delete(model.card_label);
       } else {
@@ -43,6 +57,8 @@ export const ModelGrid = ({
     },
     [selectedModels, setSelectedModels]
   );
+
+  // Colormap by coefficient magnitude
 
   const coefficientRangeAbsoluteMax = useMemo(() => {
     let max = -1;
@@ -84,5 +100,3 @@ export const ModelGrid = ({
     </div>
   );
 };
-
-// make antoher component of the ModelGrid container to avoid re-rednering of the ModelColumn
