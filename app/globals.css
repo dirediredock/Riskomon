@@ -4,7 +4,8 @@
 
 h1 {
   @apply text-3xl font-bold;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 h2,
 .subtitleHeaderText {
@@ -21,7 +22,7 @@ h3 {
   flex-direction: column;
   /* justify-content: space-between; */
   height: 100vh;
-  padding-left: 40px;
+  padding-left: 60px;
   /* padding-right: 40px; */
 }
 
@@ -31,17 +32,20 @@ h3 {
   background-color: white;
   z-index: 100;
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 }
 
 .colorMapButton {
-  color: white;
-  font-weight: bold;
+  /* color: gray; */
+  height: 32px;
+  /* font-weight: bold; */
   text-align: center;
   margin-right: 10px;
   padding: 0px 5px;
   border-radius: 5px;
   width: 45px;
+  border: 3px solid silver;
+  border-radius: 5px;
 }
 
 .featureGrid {
@@ -100,7 +104,7 @@ h3 {
   display: flex;
   position: relative;
   justify-content: space-between;
-  min-width: 250px;
+  min-width: 300px;
 }
 
 .featureLabel {
@@ -110,6 +114,8 @@ h3 {
 }
 
 .featureContainer:hover {
+  /* background-color: palegreen; */
+  /* background-color: plum; */
   background-color: whitesmoke;
 }
 
@@ -231,7 +237,7 @@ h3 {
   background-color: white;
   z-index: 10;
   box-shadow: 0px -6px 9px whitesmoke;
-  margin-left: -40px;
+  margin-left: -55px;
   /* margin-right: -40px; */
   padding-top: 10px;
   /* padding-left: 40px; */
@@ -281,6 +287,7 @@ h3 {
 .modelSelect {
   border: 3px solid silver;
   border-radius: 5px;
+  height: 32px;
 }
 
 .featuresCount {
@@ -390,4 +397,21 @@ h3 {
 
 .emptySpacer {
   flex-grow: 1;
+}
+
+.buttonCardClose {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  opacity: 0.45;
+  /* background-color: gray; */
+}
+
+.buttonCardClose:hover {
+  opacity: 1;
 }

@@ -21,9 +21,11 @@ export const DataPicker = ({
 }: DataPickerProps) => {
   return (
     <div className="dataPicker">
-      <h1>FASTERRISK RASHOMON SET EXPLORER</h1>
+      <h1>RISKOMON · Card Deck Explorer for a FasterRisk Rashomon Set</h1>
       <span>
-        The&nbsp;
+        There are <span className="modelsCount">{modelsCount}</span> models that
+        share <span className="featuresCount">{featuresCount}</span> features in
+        the{" "}
         <select
           className="modelSelect"
           onChange={(e) => onModelSelected(e.target.value)}
@@ -33,10 +35,8 @@ export const DataPicker = ({
               {modelFilename}
             </option>
           ))}
-        </select>
-        &nbsp; dataset has{" "}
-        <span className="featuresCount">{featuresCount}</span> features across{" "}
-        <span className="modelsCount">{modelsCount}</span> models. Showing the{" "}
+        </select>{" "}
+        card deck dataset. Showing the{" "}
         <select
           className="modelSelect"
           onChange={(e) => setMarginalia(e.target.value)}
@@ -46,15 +46,14 @@ export const DataPicker = ({
           <option value="AUC">area under the curve (AUC)</option>
           <option value="RISK">full risk profile (RISK)</option>
         </select>{" "}
-        of these models. Colormap:{" "}
+        of these models. Colormap by coefficient magnitude:{" "}
         <button
           className="colorMapButton"
-          style={{
-            background: useColorMap
-              ? `linear-gradient(0.95turn, ${coolwarm[50]} 0%, ${coolwarm[coolwarm.length / 2]} 50%, ${coolwarm[coolwarm.length - 50]} 100%)`
-              : "skyblue",
-          }}
-          title={!useColorMap ? "Use color map" : "Use default color"}
+          // style={{
+          //   background: useColorMap
+          //     ? `linear-gradient(0.95turn, ${coolwarm[50]} 0%, ${coolwarm[coolwarm.length / 2]} 50%, ${coolwarm[coolwarm.length - 50]} 100%)`
+          //     : "skyblue",
+          // }}
           onClick={() => setUseColorMap(!useColorMap)}
         >
           {useColorMap ? "ON" : "OFF"}
