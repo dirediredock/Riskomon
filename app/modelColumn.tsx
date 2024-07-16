@@ -64,7 +64,7 @@ const Coefficient = ({
       backgroundColor: useColorMap
         ? getColor(coefficient, coefficientRangeAbsoluteMax)
         : undefined,
-      border: isHovered ? "2px solid gray" : "2px solid transparent",
+      border: isHovered ? "2px solid rgb(72,72,72)" : "2px solid transparent",
     }),
     [coefficient, coefficientRangeAbsoluteMax, isHovered, useColorMap]
   );

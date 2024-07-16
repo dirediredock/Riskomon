@@ -114,8 +114,6 @@ h3 {
 }
 
 .featureContainer:hover {
-  /* background-color: palegreen; */
-  /* background-color: plum; */
   background-color: whitesmoke;
 }
 
@@ -131,15 +129,18 @@ h3 {
   border-radius: 4px;
 }
 
-.dragHandle {
+.dragHandleContainer {
   display: flex;
   flex-grow: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+}
+
+.dragHandle {
   cursor: grab;
   width: 20px;
   height: 20px;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 20px;
 }
 
 .dragHandle:hover {
@@ -174,6 +175,7 @@ h3 {
   justify-content: center;
   align-items: center;
   font-size: 12px;
+  /* color: black; */
   color: white;
   background-color: skyblue;
   border-radius: 100px;
@@ -181,6 +183,9 @@ h3 {
   height: 25px;
   font-weight: bold;
   z-index: 1;
+  /* font-family: "Fira Code", "Courier New", monospace; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
 }
 
 .topCap {
@@ -293,21 +298,24 @@ h3 {
 .featuresCount {
   color: gray;
   font-weight: bold;
-  font-family: Courier;
+  /* font-family: "Fira Code", "Courier New", monospace; */
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1em;
 }
 
 .modelsCount {
   color: skyblue;
   font-weight: bold;
-  font-family: Courier;
+  /* font-family: "Fira Code", "Courier New", monospace; */
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1em;
 }
 
 .featureFrequency {
   color: skyblue;
   font-weight: bold;
-  font-family: Courier;
+  /* font-family: "Fira Code", "Courier New", monospace; */
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8em;
   width: 25px;
   text-align: right;
@@ -334,7 +342,9 @@ h3 {
 .featureCoeffVis {
   margin-left: 25px;
   font-weight: bold;
-  /* font-family: monospace; */
+  /* font-family: "Fira Code", "Courier New", monospace; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.05em;
 }
 
 .visPickAxis {

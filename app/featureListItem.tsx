@@ -38,12 +38,35 @@ export const FeatureListItem = ({
   const element = useRef<HTMLLIElement>(null);
   const dragHandle = useRef<HTMLDivElement>(null);
   const [closestEdge, setClosestEdge] = React.useState<Edge | null>();
+
+  const [currentIndex, setCurrentIndex] = React.useState(index);
+  const [isDragged, setIsDragged] = React.useState(false);
+  const [moved, setMoved] = React.useState<"up" | "down" | null>(null);
+
   const handleMouseEnter = useCallback(() => {
     setHoveredFeature(feature.name);
   }, [feature.name, setHoveredFeature]);
   const handleMouseLeave = useCallback(() => {
     setHoveredFeature(null);
   }, [setHoveredFeature]);
+
+  // if feature is NOT DRAGGED, update its index only
+  // if feature is DRAGGED, update its index and log the direction of movement
+
+  useEffect(() => {
+    if (isDragged && currentIndex !== index) {
+      if (index < currentIndex) {
+        setMoved("up");
+      } else if (index > currentIndex) {
+        setMoved("down");
+      }
+      setIsDragged(false);
+    }
+
+    if (currentIndex !== index) {
+      setCurrentIndex(index);
+    }
+  }, [currentIndex, feature.name, index, isDragged]);
 
   useEffect(() => {
     if (!dragHandle.current || !element.current) return;
@@ -93,6 +116,11 @@ export const FeatureListItem = ({
 
           setClosestEdge(extractClosestEdge(selfData));
         },
+        onDragStart: () => {
+          if (!isDragged) {
+            setIsDragged(true);
+          }
+        },
         onDragLeave() {
           setTimeout(() => setClosestEdge(null), 50);
         },
@@ -101,7 +129,7 @@ export const FeatureListItem = ({
         },
       })
     );
-  }, [feature, index]);
+  }, [feature, index, isDragged]);
 
   return (
     <li
@@ -114,19 +142,40 @@ export const FeatureListItem = ({
         <span className="featureFrequency">{feature.count}</span>
         <span>{feature.name}</span>
       </div>
-      <div ref={dragHandle} className="dragHandle">
-        <span role="img">
-          <svg width="20" height="20" viewBox="0 0 20 20" role="presentation">
-            <g fill="currentColor" fillRule="evenodd" color="gray">
-              <circle cx="8" cy="6" r="1.5"></circle>
-              <circle cx="12" cy="6" r="1.5"></circle>
-              <circle cx="8" cy="14" r="1.5"></circle>
-              <circle cx="12" cy="14" r="1.5"></circle>
-              <circle cx="8" cy="10" r="1.5"></circle>
-              <circle cx="12" cy="10" r="1.5"></circle>
-            </g>
+
+      <div className="dragHandleContainer">
+        <div
+          style={{
+            transform: moved === "down" ? "rotate(90deg)" : "rotate(-90deg)",
+          }}
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20">
+            <path
+              d="M5 16 L15 10 L5 4 Z"
+              fill={
+                moved === "down"
+                  ? "rgba(138,43,226,0.6)"
+                  : moved === "up"
+                    ? "rgba(0,128,0,0.6)"
+                    : "transparent"
+              }
+            />
           </svg>
-        </span>
+        </div>
+        <div ref={dragHandle} className="dragHandle">
+          <span role="img">
+            <svg width="20" height="20" viewBox="0 0 20 20" role="presentation">
+              <g fill="currentColor" fillRule="evenodd" color="gray">
+                <circle cx="8" cy="6" r="1.5"></circle>
+                <circle cx="12" cy="6" r="1.5"></circle>
+                <circle cx="8" cy="14" r="1.5"></circle>
+                <circle cx="12" cy="14" r="1.5"></circle>
+                <circle cx="8" cy="10" r="1.5"></circle>
+                <circle cx="12" cy="10" r="1.5"></circle>
+              </g>
+            </svg>
+          </span>
+        </div>
       </div>
 
       {closestEdge && <DropIndicator edge={closestEdge} gap="0px" />}
