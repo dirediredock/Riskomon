@@ -39,6 +39,8 @@ export const CardRousel = ({
 
   return (
     <div className="cardRousel">
+      <div className="cardRouselHeaderContainer">
+      <span className="cardRouselLabel">CARDS</span>
       <button
         className="collapseButton"
         onClick={() => setIsCollapsed(!isCollapsed)}
@@ -60,7 +62,7 @@ export const CardRousel = ({
           />
         </svg>
       </button>
-
+      </div>
       <div
         className="cardConatiner"
         style={{
@@ -76,6 +78,7 @@ export const CardRousel = ({
               model={model}
               marginalia={marginalia}
               removeModel={removeModel}
+              inert={isCollapsed}
             />
           );
         })}
