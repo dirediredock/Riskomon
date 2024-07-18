@@ -6,15 +6,17 @@ interface PopUpCardProps {
   model: ModelData;
   marginalia: string;
   removeModel: (cardLabel: string) => void;
+  inert: boolean;
 }
 
 export const PopUpCard = ({
   model,
   marginalia,
   removeModel,
+  inert
 }: PopUpCardProps) => {
   const handleClose = () => {
-    console.log("CLOSE: Card", model.card_label);
+    if (inert) return;
     removeModel(model.card_label);
   };
   useEffect(() => {
@@ -124,7 +126,7 @@ export const PopUpCard = ({
 
   return (
     <div className="popUpCard" style={{ position: "relative" }}>
-      <button className="buttonCardClose" onClick={handleClose}>
+      <button className="buttonCardClose" onClick={handleClose} style={{cursor: inert ? "default" : "pointer"}}>
         ✖️
       </button>
       <h3>Model {model.card_label} Card</h3>

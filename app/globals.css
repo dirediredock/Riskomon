@@ -249,12 +249,25 @@ h3 {
   /* padding-right: 40px; */
 }
 
+.cardRouselHeaderContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .collapseButton {
   width: 35px;
   height: 35px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   /* margin-bottom: 25px; */
+}
+
+.cardRouselLabel {
+  font-size: 1.25rem;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-left: 60px;
 }
 
 .cardConatiner {
@@ -269,8 +282,9 @@ h3 {
 
 .noModelsMessage {
   color: gray;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 25px;
+  /* margin-left: auto;
+  margin-right: auto; */
   font-style: italic;
   padding-bottom: 25px;
 }
