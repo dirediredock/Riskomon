@@ -48,7 +48,7 @@ The current ordering of columns in the MODELS pane shows that only the first thr
 
 ## Adaptive Design
 
-The current version of RISKOMON comes with five precomputed datasets. Future versions will allow users to upload their own FasterRisk Rashomon set datasets.
+The current version of RISKOMON comes with five precomputed datasets. Future versions will allow users to upload their own FasterRisk Rashomon Set datasets.
 
 The default dataset, MAMMO, shows cancer risk from mammography information. The BANK dataset shows lending risks. The FICO dataset is a consumer credit score dataset created as an explainable machine learning challenge. The SHROOM dataset models the risk of poisoning from mushroom toxicity. The ADULT dataset shows life insurance risk. Note that the ADULT dataset is the only dataset with opposite valence. In RISKOMON, positive feature coefficients map to high risk, but in the context of ADULT, positive coefficients mean a higher likelihood of life insurance approval.
 
