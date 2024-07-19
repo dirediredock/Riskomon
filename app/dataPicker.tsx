@@ -36,7 +36,7 @@ export const DataPicker = ({
             </option>
           ))}
         </select>{" "}
-        card deck dataset. Showing the{" "}
+        Rashomon Set dataset. Showing the{" "}
         <select
           className="modelSelect"
           onChange={(e) => setMarginalia(e.target.value)}
