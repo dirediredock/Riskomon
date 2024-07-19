@@ -8,7 +8,7 @@ This GitHub repo hosts the codebase for a Netlify build, check out the live tool
 
 ## Interface Components
 
-The RISKOMON graphical user interface has four components: the CONTROLS strip at the top, the FEATURES pane on the left, the MODELS pane on the right, and the CARDS pane at the bottom.
+The RISKOMON graphical user interface has four components: the CONTROLS strip, the FEATURES pane, the MODELS pane, and the CARDS pane.
 
 <img src="figures/README_Fig2.png" width="100%" ></a>
 
