@@ -52,7 +52,7 @@ The current ordering of columns in the MODELS pane shows that only the first thr
 
 The current version of RISKOMON comes with five precomputed datasets. Future versions will allow users to upload their own FasterRisk Rashomon Set datasets.
 
-The default dataset, MAMMO, shows cancer risk from mammography information[^1]. The BANK dataset shows lending risks[^2]. The FICO dataset is a consumer credit score dataset created as an explainable machine learning challenge[^3]. The SHROOM dataset models the risk of poisoning from mushroom toxicity[^4]. The ADULT dataset shows life insurance risk[^5]. Note that the ADULT dataset is the only dataset with opposite valence. In RISKOMON, positive feature coefficients map to high risk, but in the context of ADULT, positive coefficients mean a higher likelihood of life insurance approval.
+The default dataset, MAMMO, predicts cancer risk from mammography information[^MAMMO]. The FICO dataset predicts whether a borrower will default on a loan or credit obligation[^FICO]. The SHROOM dataset predicts the risk of poisoning from mushroom toxicity[^SHROOM]. The BANK dataset predicts whether a person opens an account after a marketing call[^BANK]. The ADULT dataset predicts whether a U.S. resident earns more than $50,000 annually[^ADULT]. In RISKOMON, positive feature coefficients map semantically to high risk, visually encoded with red bubbles. The MAMMO, FICO, and SHROOM datasets align with this semantic mapping. However, the BANK and ADULT datasets have a different valence: positive coefficients map to a higher likelihood of opening an account in BANk, and to higher salaries in ADULT.
 
 <img src="figures/README_Fig8.png" width="100%" ></a>
 
@@ -60,15 +60,15 @@ The dynamic aspect ratio of RISKOMON adapts the FEATURES, MODELS, and CARDS pane
 
 ### References
 
-[^1]: [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/mammo_data.csv) Elter, M., Schulz‐Wendtland, R., & Wittenberg, T. (2007). The prediction of breast cancer biopsy outcomes using two CAD approaches that both emphasize an intelligible decision process. Medical physics, 34(11), 4164-4172. 
+[^MAMMO]: [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/mammo_data.csv) Elter, M., Schulz‐Wendtland, R., & Wittenberg, T. (2007). The prediction of breast cancer biopsy outcomes using two CAD approaches that both emphasize an intelligible decision process. Medical physics, 34(11), 4164-4172. 
 
-[^2]: [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/bank_data.csv) Moro, S., Cortez, P., & Rita, P. (2014). A data-driven approach to predict the success of bank telemarketing. Decision Support Systems, 62, 22-31. 
+[^BANK]: [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/bank_data.csv) Moro, S., Cortez, P., & Rita, P. (2014). A data-driven approach to predict the success of bank telemarketing. Decision Support Systems, 62, 22-31. 
 
-[^3]: [Source](https://community.fico.com/s/explainable-machine-learning-challenge) FICO, Google, Imperial College London, MIT, University of Oxford, UC Irvine, and UC Berkeley. (2018). Explainable Machine Learning Challenge. 
+[^FICO]: [Source](https://community.fico.com/s/explainable-machine-learning-challenge) FICO, Google, Imperial College London, MIT, University of Oxford, UC Irvine, and UC Berkeley. (2018). Explainable Machine Learning Challenge. 
 
-[^4]: [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/mushroom_data.csv) Schlimmer, J. C. (1987). Concept acquisition through representational adjustment. University of California, Irvine. 
+[^SHROOM]: [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/mushroom_data.csv) Schlimmer, J. C. (1987). Concept acquisition through representational adjustment. University of California, Irvine. 
 
-[^5]: [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/adult_data.csv) Kohavi, R. (1996). Scaling up the accuracy of naive-Bayes classifiers: A decision-tree hybrid. In KDD (Vol. 96, pp. 202-207). 
+[^ADULT]: [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/adult_data.csv) Kohavi, R. (1996). Scaling up the accuracy of naive-Bayes classifiers: A decision-tree hybrid. In KDD (Vol. 96, pp. 202-207). 
 
 
 
