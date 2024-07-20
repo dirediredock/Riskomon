@@ -2,15 +2,15 @@
 
 <a href="https://riskomon.netlify.app/"><img src="figures/README_Fig1x.png" width="100%" ></a>
 
-RISKOMON is an interactive visualization tool for the exploration of a Rashomon set of scoring system models—that is, a collection of equally-good risk score models—obtained from the [FasterRisk](https://github.com/interpretml/FasterRisk/tree/main) algorithm[^FASTERRISK]. Each column represents a different risk score model. All the models represented have loss close to the best loss possible on the given training set. The yellow stripe indicates a selected model which, just like picking cards from a deck of cards, appears at the bottom of the screen.
+Riskomon is an interactive visualization tool for the exploration of a Rashomon set of scoring system models—that is, a collection of equally-good risk score models—obtained from the [FasterRisk](https://github.com/interpretml/FasterRisk/tree/main) algorithm[^FASTERRISK]. Each column represents a different risk score model. All the models represented have loss close to the best loss possible on the given training set. The yellow stripe indicates a selected model which, just like picking cards from a deck of cards, appears at the bottom of the screen.
 
 This GitHub repo hosts the codebase for a Netlify build, check out the live tool here: [riskomon.netlify.app](https://riskomon.netlify.app/)
 
-The motivation for developing the RISKOMON visualization tool comes from a deeper motivation: tackling the "black box" problem of the traditional machine learning (ML) paradigm, which is a big problem for ML in high-stakes decision-making contexts such as parole policy and medical diagnoses. As explained in the spotlight perspective [_Amazing Things Come From Having Many Good Models_](https://users.cs.duke.edu/~cynthia/docs/RudinAmazingThingsICML2024.pdf)[^ICML], in the traditional ML pipeline, a single model is the only output, and its inner workings are a mystery due to the "black box" training architecture, which makes further model alignment time-consuming and computationally expensive. In contrast, the Rashomon set paradigm computes a collection of different yet equally-performing models, all of which are, from the outset, built with an interpretable architecture. In the Rashomon set paradigm, model alignment by human experts is not computationally expensive, given that all of the models are already computed within the Rashomon set. This is where visualization tools like RISKOMON come into the picture, enabling human experts to sieve through Rashomon sets to find models that match the domain knowledge constraints required in high-stakes decision-making contexts.
+The motivation for developing the Riskomon visualization tool is tackling the "black box" problem of the traditional machine learning (ML) paradigm, which is a big problem for ML in high-stakes decision-making contexts such as parole policy and medical diagnoses. As explained in the spotlight perspective [_Amazing Things Come From Having Many Good Models_](https://users.cs.duke.edu/~cynthia/docs/RudinAmazingThingsICML2024.pdf)[^ICML], in the traditional ML pipeline, a single model is the only output, and its inner workings are a mystery due to the "black box" training architecture, which makes further model alignment time-consuming and computationally expensive. In contrast, the Rashomon set paradigm computes a collection of different yet equally-performing models, all of which are, from the outset, built with an interpretable architecture. In the Rashomon set paradigm, model alignment by human experts is not computationally expensive, given that all of the models are already computed within the Rashomon set. This is where visualization tools like Riskomon come into the picture, enabling human experts to sieve through Rashomon sets to find models that match the domain knowledge constraints required in high-stakes decision-making contexts.
 
 ## Interface Components
 
-The RISKOMON graphical user interface has four components: the CONTROLS strip, the FEATURES pane, the MODELS pane, and the CARDS pane.
+The Riskomon graphical user interface has four components: the CONTROLS strip, the FEATURES pane, the MODELS pane, and the CARDS pane.
 
 <img src="figures/README_Fig2x.png" width="100%" ></a>
 
@@ -50,13 +50,13 @@ The current ordering of columns in the MODELS pane shows that only the first thr
 
 ## Adaptive Design
 
-The current version of RISKOMON comes with five precomputed datasets. Future versions will allow users to upload their own FasterRisk Rashomon Set datasets.
+The current version of Riskomon comes with five precomputed datasets. Future versions will allow users to upload their own FasterRisk Rashomon Set datasets.
 
 <img src="figures/README_Fig8.png" width="100%" ></a>
 
-The dynamic aspect ratio of RISKOMON adapts the FEATURES, MODELS, and CARDS panes to any screen size, maximizing visual real estate to accommodate larger Rashomon sets, such as the FICO dataset.
+The dynamic aspect ratio of Riskomon adapts the FEATURES, MODELS, and CARDS panes to any screen size, maximizing visual real estate to accommodate larger Rashomon sets, such as the FICO dataset.
 
-The default dataset, MAMMO, predicts cancer risk from mammography information[^MAMMO]. The FICO dataset predicts whether a borrower will default on a loan or credit obligation[^FICO]. The SHROOM dataset predicts the risk of poisoning from mushroom toxicity[^SHROOM]. The BANK dataset predicts whether a person opens an account after a marketing call[^BANK]. The ADULT dataset predicts whether a U.S. resident earns more than $50,000 annually[^ADULT]. In RISKOMON, positive feature coefficients map semantically to high risk, visually encoded with red bubbles. The MAMMO, FICO, and SHROOM datasets align with this semantic mapping. However, the BANK and ADULT datasets have a different valence: positive coefficients map to a higher likelihood of opening an account in BANK, and to higher salaries in ADULT. The alternative monochrome colormap can help navigate dataset scenarios with such different valences.
+The default dataset, MAMMO, predicts cancer risk from mammography information[^MAMMO]. The FICO dataset predicts whether a borrower will default on a loan or credit obligation[^FICO]. The SHROOM dataset predicts the risk of poisoning from mushroom toxicity[^SHROOM]. The BANK dataset predicts whether a person opens an account after a marketing call[^BANK]. The ADULT dataset predicts whether a U.S. resident earns more than $50,000 annually[^ADULT]. In Riskomon, positive feature coefficients map semantically to high risk, visually encoded with red bubbles. The MAMMO, FICO, and SHROOM datasets align with this semantic mapping. However, the BANK and ADULT datasets have a different valence: positive coefficients map to a higher likelihood of opening an account in BANK, and to higher salaries in ADULT. The alternative monochrome colormap can help navigate dataset scenarios with such different valences.
 
 ### References
 
