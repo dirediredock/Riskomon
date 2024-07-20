@@ -60,15 +60,15 @@ The dynamic aspect ratio of RISKOMON adapts the FEATURES, MODELS, and CARDS pane
 
 ### References
 
-[^1]: Elter, M., Schulz‐Wendtland, R., & Wittenberg, T. (2007). The prediction of breast cancer biopsy outcomes using two CAD approaches that both emphasize an intelligible decision process. Medical physics, 34(11), 4164-4172. [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/mammo_data.csv)
+[^1]: [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/mammo_data.csv) Elter, M., Schulz‐Wendtland, R., & Wittenberg, T. (2007). The prediction of breast cancer biopsy outcomes using two CAD approaches that both emphasize an intelligible decision process. Medical physics, 34(11), 4164-4172. 
 
-[^2]: Moro, S., Cortez, P., & Rita, P. (2014). A data-driven approach to predict the success of bank telemarketing. Decision Support Systems, 62, 22-31. [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/bank_data.csv)
+[^2]: [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/bank_data.csv) Moro, S., Cortez, P., & Rita, P. (2014). A data-driven approach to predict the success of bank telemarketing. Decision Support Systems, 62, 22-31. 
 
-[^3]: FICO, Google, Imperial College London, MIT, University of Oxford, UC Irvine, and UC Berkeley. (2018). Explainable Machine Learning Challenge. [Source](https://community.fico.com/s/explainable-machine-learning-challenge)
+[^3]: [Source](https://community.fico.com/s/explainable-machine-learning-challenge) FICO, Google, Imperial College London, MIT, University of Oxford, UC Irvine, and UC Berkeley. (2018). Explainable Machine Learning Challenge. 
 
-[^4]: Schlimmer, J. C. (1987). Concept acquisition through representational adjustment. University of California, Irvine. [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/mushroom_data.csv)
+[^4]: [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/mushroom_data.csv) Schlimmer, J. C. (1987). Concept acquisition through representational adjustment. University of California, Irvine. 
 
-[^5]: Kohavi, R. (1996). Scaling up the accuracy of naive-Bayes classifiers: A decision-tree hybrid. In KDD (Vol. 96, pp. 202-207). [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/adult_data.csv)
+[^5]: [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/adult_data.csv) Kohavi, R. (1996). Scaling up the accuracy of naive-Bayes classifiers: A decision-tree hybrid. In KDD (Vol. 96, pp. 202-207). 
 
 
 
