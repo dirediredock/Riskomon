@@ -32,11 +32,11 @@ The bottom of each card reports four model statistic values: logistic loss (LOSS
 
 ## Use Case Walkthrough
 
-Now, we briefly walk through an example scenario in which a domain expert decides which model to use for analyzing breast cancer lesions in a mammogram. 
+Now, we briefly walk through an example scenario in which a domain expert decides which model to use for analyzing breast cancer lesions in a mammogram. The expert demotes feature _Age_geq_30_ by dragging it down to the bottom, because most women under 30 don't get mammograms. 
 
 <img src="figures/README_Fig4.png" width="100%" ></a>
 
-The expert demotes feature _Age_geq_30_ by dragging it down to the bottom, because most women under 30 don't get mammograms. The model columns reorder accordingly, reflecting the new feature order. The _Age_geq_30_ feature now has a purple downward arrow, showing that it was demoted. 
+The model columns reorder accordingly, reflecting the new feature order. The _Age_geq_30_ feature now has a purple downward arrow, showing that it was demoted. 
 
 <img src="figures/README_Fig5.png" width="100%" ></a>
 
