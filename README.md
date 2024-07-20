@@ -12,7 +12,7 @@ The motivation for the development of the RISKOMON visualization tool comes abou
 
 The RISKOMON graphical user interface has four components: the CONTROLS strip, the FEATURES pane, the MODELS pane, and the CARDS pane.
 
-<img src="figures/README_Fig2b.png" width="100%" ></a>
+<img src="figures/README_Fig2x.png" width="100%" ></a>
 
 The CONTROLS strip at the top shows the number of models and features that appear in the Rashomon set dataset selected in the first dropdown menu. The default Rashomon set shown here, the MAMMO dataset, is a collection of scoring system models that compute breast cancer risk from mammography data. The second dropdown menu lets users pick which statistic to show at the top of the MODELS pane. Logistic loss (LOSS) is the default view. Other possibilities include training accuracy (ACC) and area under the curve (AUC). The full risk profile (RISK) statistic shows the risk percent distribution for each model, not just a single value. The colormap button on the right toggles between the default of coloring by coefficient magnitude and the monochrome alternative. The colormap ranges from red to blue, where red bubbles map to positive coefficients, which add more risk to a model; while blue bubbles map to negative coefficients, which subtract risk from a model.
 
