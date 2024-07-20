@@ -10,17 +10,17 @@ The motivation for the development of the RISKOMON visualization tool comes abou
 
 ## Interface Components
 
-The RISKOMON graphical user interface has four components: the controls strip, the FEATURES pane, the MODELS pane, and the CARDS pane.
+The RISKOMON graphical user interface has four components: the CONTROLS strip, the FEATURES pane, the MODELS pane, and the CARDS pane.
 
-<img src="figures/README_Fig2.png" width="100%" ></a>
+<img src="figures/README_Fig2b.png" width="100%" ></a>
 
-The controls strip at the top shows the number of models and features that appear in the Rashomon set dataset selected in the first dropdown menu. The default Rashomon set shown here, the MAMMO dataset, is a collection of scoring system models that compute breast cancer risk from mammography data. The second dropdown menu lets users pick which statistic to show at the top of the MODELS pane. Logistic loss (LOSS) is the default view. Other possibilities include training accuracy (ACC) and area under the curve (AUC). The full risk profile (RISK) statistic shows the risk percent distribution for each model, not just a single value. The colormap button on the right toggles between the default of coloring by coefficient magnitude and the monochrome alternative. The colormap ranges from red to blue, where red bubbles map to positive coefficients, which add more risk to a model; while blue bubbles map to negative coefficients, which subtract risk from a model.
+The CONTROLS strip at the top shows the number of models and features that appear in the Rashomon set dataset selected in the first dropdown menu. The default Rashomon set shown here, the MAMMO dataset, is a collection of scoring system models that compute breast cancer risk from mammography data. The second dropdown menu lets users pick which statistic to show at the top of the MODELS pane. Logistic loss (LOSS) is the default view. Other possibilities include training accuracy (ACC) and area under the curve (AUC). The full risk profile (RISK) statistic shows the risk percent distribution for each model, not just a single value. The colormap button on the right toggles between the default of coloring by coefficient magnitude and the monochrome alternative. The colormap ranges from red to blue, where red bubbles map to positive coefficients, which add more risk to a model; while blue bubbles map to negative coefficients, which subtract risk from a model.
 
 The FEATURES pane on the left shows all the features that appear in any model in the Rashomon set. For each row, the blue number on the left reports the number of models containing that feature. By default, the feature rows are ordered by the number of different models in which the feature appears. Using the handle to the right of each feature name, a user can drag and drop features to reorder the rows. 
 
 The MODELS pane on the right shows each model as a column. Connected by a vertical line, each bubble in the column represents a feature that appears in the model, and the number in the bubble represents the coefficient of that feature. The order of the model columns depends on the order of the rows; moving features on the left will change the order in which the models appear. The leftmost columns show the models containing the greatest number of features at the top rows of the list of features. Therefore, when you promote feature rows by moving them to the top to indicate their desirability, the columns on the left will represent the models that use those features.
 
-The top of the MODELS pane, above the connected bubbles, contains vertical plots of the model statistic selected in the controls strip. These plots have a shared axis on the left, with a shared range that is the minimum to maximum values across all models.
+The top of the MODELS pane, above the connected bubbles, contains vertical plots of the model statistic selected in the CONTROLS strip. These plots have a shared axis on the left, with a shared range that is the minimum to maximum values across all models.
 
 The bottom CARDS pane shows the card views of each column selected in the MODELS pane above it; the first one is already selected by default. Selecting more columns makes their cards appear. They can be removed with the X on the upper right or by clicking on the column again. Panning horizontally can show more models.
 
