@@ -6,7 +6,7 @@ RISKOMON is an interactive visualization tool for the exploration of a Rashomon 
 
 This GitHub repo hosts the codebase for a Netlify build, check out the live tool here: [riskomon.netlify.app](https://riskomon.netlify.app/)
 
-The motivation for the development of the RISKOMON visualization tool comes about from a deeper motivation: tackling the "black box" problem of the traditional machine learning (ML) paradigm, which is a big problem for ML in high-stakes decision-making contexts such as parole policy and medical diagnoses. In the traditional ML pipeline, a single model is the only output, and its inner workings are a mystery due to the "black box" training architecture, which makes further model alignment time-consuming and computationally expensive. In contrast, the Rashomon set paradigm computes a collection of different yet equally-performing models, all of which are, from the outset, built with an interpretable architecture. In the Rashomon set paradigm model alignment is not computationally expensive, given that all of the models are already computed within the Rashomon set. This is where visualization tools like RISKOMON come in, enabling human experts to sieve through Rashomon sets to find models that match the domain knowledge constraints required in high-stakes decision-making contexts.
+The motivation for the development of the RISKOMON visualization tool comes about from a deeper motivation: tackling the "black box" problem of the traditional machine learning (ML) paradigm, which is a big problem for ML in high-stakes decision-making contexts such as parole policy and medical diagnoses. As explained in the spotlight perspective [_Amazing Things Come From Having Many Good Models_](https://users.cs.duke.edu/~cynthia/docs/RudinAmazingThingsICML2024.pdf), the traditional ML pipeline, a single model is the only output, and its inner workings are a mystery due to the "black box" training architecture, which makes further model alignment time-consuming and computationally expensive. In contrast, the Rashomon set paradigm computes a collection of different yet equally-performing models, all of which are, from the outset, built with an interpretable architecture. In the Rashomon set paradigm model alignment is not computationally expensive, given that all of the models are already computed within the Rashomon set. This is where visualization tools like RISKOMON come in, enabling human experts to sieve through Rashomon sets to find models that match the domain knowledge constraints required in high-stakes decision-making contexts. 
 
 ## Interface Components
 
@@ -52,8 +52,24 @@ The current ordering of columns in the MODELS pane shows that only the first thr
 
 The current version of RISKOMON comes with five precomputed datasets. Future versions will allow users to upload their own FasterRisk Rashomon Set datasets.
 
-The default dataset, MAMMO, shows cancer risk from mammography information. The BANK dataset shows lending risks. The FICO dataset is a consumer credit score dataset created as an explainable machine learning challenge. The SHROOM dataset models the risk of poisoning from mushroom toxicity. The ADULT dataset shows life insurance risk. Note that the ADULT dataset is the only dataset with opposite valence. In RISKOMON, positive feature coefficients map to high risk, but in the context of ADULT, positive coefficients mean a higher likelihood of life insurance approval.
+The default dataset, MAMMO, shows cancer risk from mammography information[^1]. The BANK dataset shows lending risks[^2]. The FICO dataset is a consumer credit score dataset created as an explainable machine learning challenge[^3]. The SHROOM dataset models the risk of poisoning from mushroom toxicity[^4]. The ADULT dataset shows life insurance risk[^5]. Note that the ADULT dataset is the only dataset with opposite valence. In RISKOMON, positive feature coefficients map to high risk, but in the context of ADULT, positive coefficients mean a higher likelihood of life insurance approval.
 
 <img src="figures/README_Fig8.png" width="100%" ></a>
 
 The dynamic aspect ratio of RISKOMON adapts the FEATURES, MODELS, and CARDS panes to any screen size, maximizing visual real estate to accommodate larger Rashomon sets, such as the FICO dataset.
+
+### References
+
+[^1]: Elter, M., Schulz‐Wendtland, R., & Wittenberg, T. (2007). The prediction of breast cancer biopsy outcomes using two CAD approaches that both emphasize an intelligible decision process. Medical physics, 34(11), 4164-4172. [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/mammo_data.csv)
+
+[^2]: Moro, S., Cortez, P., & Rita, P. (2014). A data-driven approach to predict the success of bank telemarketing. Decision Support Systems, 62, 22-31. [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/bank_data.csv)
+
+[^3]: FICO, Google, Imperial College London, MIT, University of Oxford, UC Irvine, and UC Berkeley. (2018). Explainable Machine Learning Challenge. [Source](https://community.fico.com/s/explainable-machine-learning-challenge)
+
+[^4]: Schlimmer, J. C. (1987). Concept acquisition through representational adjustment. University of California, Irvine. [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/mushroom_data.csv)
+
+[^5]: Kohavi, R. (1996). Scaling up the accuracy of naive-Bayes classifiers: A decision-tree hybrid. In KDD (Vol. 96, pp. 202-207). [Source](https://github.com/ustunb/risk-slim/blob/master/examples/data/adult_data.csv)
+
+
+
+
