@@ -8,6 +8,8 @@ This GitHub repo hosts the codebase for a Netlify build, check out the live tool
 
 The motivation for developing the Riskomon visualization tool is tackling the "black box" problem of the traditional machine learning (ML) paradigm, which is a big problem for ML in high-stakes decision-making contexts such as parole policy and medical diagnoses. As explained in the spotlight perspective [_Amazing Things Come From Having Many Good Models_](https://users.cs.duke.edu/~cynthia/docs/RudinAmazingThingsICML2024.pdf)[^ICML], in the traditional ML pipeline, a single model is the only output, and its inner workings are a mystery due to the "black box" training architecture, which makes further model alignment time-consuming and computationally expensive. In contrast, the Rashomon set paradigm computes a collection of different yet equally-performing models, all of which are, from the outset, built with an interpretable architecture. In the Rashomon set paradigm, model alignment by human experts is not computationally expensive, given that all of the models are already computed within the Rashomon set. This is where visualization tools like Riskomon come into the picture, enabling human experts to sieve through Rashomon sets to find models that match the domain knowledge constraints required in high-stakes decision-making contexts.
 
+[![Riskomon YouTube Walkthrough](figures/README_YouTube.png)](https://www.youtube.com/watch?v=JzP4Mv4rbNE&ab_channel=Boffrey)
+
 ## Interface Components
 
 The Riskomon graphical user interface has four components: the CONTROLS strip, the FEATURES pane, the MODELS pane, and the CARDS pane.
