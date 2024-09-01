@@ -6,6 +6,26 @@ import fico from "./input_data/FICO.json";
 import mammo from "./input_data/MAMMO.json";
 import shroom from "./input_data/SHROOM.json";
 
+import adult_50_05 from "./input_data/ADULT_50_05.json";
+import adult_200_1 from "./input_data/ADULT_200_1.json";
+import adult_200_05 from "./input_data/ADULT_200_05.json";
+
+import bank_50_05 from "./input_data/BANK_50_05.json";
+import bank_200_1 from "./input_data/BANK_200_1.json";
+import bank_200_05 from "./input_data/BANK_200_05.json";
+
+import fico_50_05 from "./input_data/FICO_50_05.json";
+import fico_200_1 from "./input_data/FICO_200_1.json";
+import fico_200_05 from "./input_data/FICO_200_05.json";
+
+import mammo_50_05 from "./input_data/MAMMO_50_05.json";
+import mammo_200_1 from "./input_data/MAMMO_200_1.json";
+import mammo_200_05 from "./input_data/MAMMO_200_05.json";
+
+import shroom_50_05 from "./input_data/SHROOM_50_05.json";
+import shroom_200_1 from "./input_data/SHROOM_200_1.json";
+import shroom_200_05 from "./input_data/SHROOM_200_05.json";
+
 interface FetchDataResult {
   models: ModelData[];
   sortedFeatures: FeatureCount[];
@@ -20,18 +40,55 @@ interface FetchDataResult {
 export const fetchData = (filename: string): FetchDataResult => {
   const fetch = (fn: String): ModelData[] => {
     switch (fn) {
+
       case "ADULT":
         return adult as ModelData[];
+      case "ADULT_50_05":
+        return adult_50_05 as ModelData[];
+      case "ADULT_200_1":
+        return adult_200_1 as ModelData[];
+      case "ADULT_200_05":
+        return adult_200_05 as ModelData[];
+
       case "BANK":
         return bank as ModelData[];
-      case "DEMO":
-        return demo as ModelData[];
+      case "BANK_50_05":
+        return bank_50_05 as ModelData[];
+      case "BANK_200_1":
+        return bank_200_1 as ModelData[];
+      case "BANK_200_05":
+        return bank_200_05 as ModelData[];
+
+      // case "DEMO":
+      //   return demo as ModelData[];
+
       case "FICO":
         return fico as ModelData[];
+      case "FICO_50_05":
+        return fico_50_05 as ModelData[];
+      case "FICO_200_1":
+        return fico_200_1 as ModelData[];
+      case "FICO_200_05":
+        return fico_200_05 as ModelData[];
+
       case "MAMMO":
         return mammo as ModelData[];
+      case "MAMMO_50_05":
+        return mammo_50_05 as ModelData[];
+      case "MAMMO_200_1":
+        return mammo_200_1 as ModelData[];
+      case "MAMMO_200_05":
+        return mammo_200_05 as ModelData[];
+
       case "SHROOM":
         return shroom as ModelData[];
+      case "SHROOM_50_05":
+        return shroom_50_05 as ModelData[];
+      case "SHROOM_200_1":
+        return shroom_200_1 as ModelData[];
+      case "SHROOM_200_05":
+        return shroom_200_05 as ModelData[];
+
       default:
         return [];
     }
@@ -73,7 +130,7 @@ export const fetchData = (filename: string): FetchDataResult => {
       m.feature_data.forEach(([_, f]) => {
         featuresCountDict.set(f, (featuresCountDict.get(f) || 0) + 1);
 
-        const loss = m.logistic_loss;
+        const loss = m.training_logistic_loss;
         LOSS_max = Math.max(LOSS_max, loss);
         LOSS_min = Math.min(LOSS_min, loss);
 

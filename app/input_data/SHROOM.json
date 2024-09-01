@@ -48,7 +48,7 @@
                 1.590673666204634e-06
             ]
         ],
-        "logistic_loss": 546.6063553396746,
+        "training_logistic_loss": 546.6063553396746,
         "training_accuracy": 99.40915805022156,
         "training_AUC": 0.9938712972420838,
         "card_popularity": "01",
@@ -119,7 +119,7 @@
                 5.695729611016018e-07
             ]
         ],
-        "logistic_loss": 553.5065066592538,
+        "training_logistic_loss": 553.5065066592538,
         "training_accuracy": 98.52289512555392,
         "training_AUC": 0.9897583085091095,
         "card_popularity": "02",
@@ -190,7 +190,7 @@
                 5.695729611016018e-07
             ]
         ],
-        "logistic_loss": 553.5065066592538,
+        "training_logistic_loss": 553.5065066592538,
         "training_accuracy": 98.52289512555392,
         "training_AUC": 0.9897583085091095,
         "card_popularity": "03",

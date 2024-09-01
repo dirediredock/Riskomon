@@ -155,7 +155,7 @@ export const PopUpCard = ({
         <div
           className={marginalia === "LOSS" ? "popUpBannerSelected" : undefined}
         >
-          LOSS: {model.logistic_loss.toFixed(1)}
+          LOSS: {model.training_logistic_loss.toFixed(1)}
         </div>
         <div
           className={marginalia === "ACC" ? "popUpBannerSelected" : undefined}

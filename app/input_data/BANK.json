@@ -88,7 +88,7 @@
                 0.015024231892044902
             ]
         ],
-        "logistic_loss": 11841.265868639359,
+        "training_logistic_loss": 11841.265868639359,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7780720523883565,
         "card_popularity": "01",
@@ -175,7 +175,7 @@
                 0.023005923051822336
             ]
         ],
-        "logistic_loss": 11805.85080177621,
+        "training_logistic_loss": 11805.85080177621,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7763222367231756,
         "card_popularity": "02",
@@ -266,7 +266,7 @@
                 0.020693034640302015
             ]
         ],
-        "logistic_loss": 11814.76017031814,
+        "training_logistic_loss": 11814.76017031814,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7770239326270978,
         "card_popularity": "03",
@@ -353,7 +353,7 @@
                 0.011721129257737306
             ]
         ],
-        "logistic_loss": 11851.894046591511,
+        "training_logistic_loss": 11851.894046591511,
         "training_accuracy": 89.75915315140332,
         "training_AUC": 0.7767996025774324,
         "card_popularity": "04",
@@ -440,7 +440,7 @@
                 0.019704377781511843
             ]
         ],
-        "logistic_loss": 11833.11271490068,
+        "training_logistic_loss": 11833.11271490068,
         "training_accuracy": 89.90239875691948,
         "training_AUC": 0.7775953027525446,
         "card_popularity": "05",
@@ -527,7 +527,7 @@
                 0.020100085954431034
             ]
         ],
-        "logistic_loss": 11823.055321381958,
+        "training_logistic_loss": 11823.055321381958,
         "training_accuracy": 89.89268719044382,
         "training_AUC": 0.7774874527310329,
         "card_popularity": "06",
@@ -614,7 +614,7 @@
                 0.012911534079373774
             ]
         ],
-        "logistic_loss": 11827.6874747187,
+        "training_logistic_loss": 11827.6874747187,
         "training_accuracy": 89.89754297368165,
         "training_AUC": 0.7783919493684262,
         "card_popularity": "07",
@@ -701,7 +701,7 @@
                 0.012510123262377477
             ]
         ],
-        "logistic_loss": 11844.209358830392,
+        "training_logistic_loss": 11844.209358830392,
         "training_accuracy": 89.91453821501409,
         "training_AUC": 0.7769694164594129,
         "card_popularity": "08",
@@ -788,7 +788,7 @@
                 0.013847077540056048
             ]
         ],
-        "logistic_loss": 11818.18357508347,
+        "training_logistic_loss": 11818.18357508347,
         "training_accuracy": 89.90725454015733,
         "training_AUC": 0.7787253029082208,
         "card_popularity": "09",
@@ -875,7 +875,7 @@
                 0.019419268163048155
             ]
         ],
-        "logistic_loss": 11835.241619673881,
+        "training_logistic_loss": 11835.241619673881,
         "training_accuracy": 89.90725454015733,
         "training_AUC": 0.7773652115026815,
         "card_popularity": "10",
@@ -962,7 +962,7 @@
                 0.021175588018523976
             ]
         ],
-        "logistic_loss": 11818.690389568517,
+        "training_logistic_loss": 11818.690389568517,
         "training_accuracy": 89.92424978148975,
         "training_AUC": 0.7775225034720519,
         "card_popularity": "11",
@@ -1041,7 +1041,7 @@
                 0.018911342058490994
             ]
         ],
-        "logistic_loss": 11841.924239763488,
+        "training_logistic_loss": 11841.924239763488,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "12",
@@ -1120,7 +1120,7 @@
                 0.019313111456762348
             ]
         ],
-        "logistic_loss": 11839.89370051317,
+        "training_logistic_loss": 11839.89370051317,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "13",
@@ -1199,7 +1199,7 @@
                 0.01905198805293565
             ]
         ],
-        "logistic_loss": 11841.15885225842,
+        "training_logistic_loss": 11841.15885225842,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "14",
@@ -1278,7 +1278,7 @@
                 0.018846220315491765
             ]
         ],
-        "logistic_loss": 11842.298914156538,
+        "training_logistic_loss": 11842.298914156538,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "15",
@@ -1357,7 +1357,7 @@
                 0.018777406835991318
             ]
         ],
-        "logistic_loss": 11842.70893733656,
+        "training_logistic_loss": 11842.70893733656,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "16",
@@ -1436,7 +1436,7 @@
                 0.01888985151630222
             ]
         ],
-        "logistic_loss": 11842.046455615982,
+        "training_logistic_loss": 11842.046455615982,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "17",
@@ -1515,7 +1515,7 @@
                 0.019035021752035614
             ]
         ],
-        "logistic_loss": 11841.248029420802,
+        "training_logistic_loss": 11841.248029420802,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "18",
@@ -1594,7 +1594,7 @@
                 0.019339697126458284
             ]
         ],
-        "logistic_loss": 11839.776062563287,
+        "training_logistic_loss": 11839.776062563287,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "19",
@@ -1673,7 +1673,7 @@
                 0.018921072385702054
             ]
         ],
-        "logistic_loss": 11841.869365294782,
+        "training_logistic_loss": 11841.869365294782,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "20",
@@ -1752,7 +1752,7 @@
                 0.01889182661840825
             ]
         ],
-        "logistic_loss": 11842.03516466299,
+        "training_logistic_loss": 11842.03516466299,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "21",
@@ -1831,7 +1831,7 @@
                 0.02001901276531725
             ]
         ],
-        "logistic_loss": 11837.444325049177,
+        "training_logistic_loss": 11837.444325049177,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "22",
@@ -1910,7 +1910,7 @@
                 0.01971092016093936
             ]
         ],
-        "logistic_loss": 11838.343557818554,
+        "training_logistic_loss": 11838.343557818554,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "23",
@@ -1989,7 +1989,7 @@
                 0.01889085099502736
             ]
         ],
-        "logistic_loss": 11842.04074046888,
+        "training_logistic_loss": 11842.04074046888,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "24",
@@ -2068,7 +2068,7 @@
                 0.01886801942928845
             ]
         ],
-        "logistic_loss": 11842.172053795784,
+        "training_logistic_loss": 11842.172053795784,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "25",
@@ -2147,7 +2147,7 @@
                 0.01938991715007627
             ]
         ],
-        "logistic_loss": 11839.559403409796,
+        "training_logistic_loss": 11839.559403409796,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "26",
@@ -2226,7 +2226,7 @@
                 0.018930350442460022
             ]
         ],
-        "logistic_loss": 11841.817308904358,
+        "training_logistic_loss": 11841.817308904358,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "27",
@@ -2305,7 +2305,7 @@
                 0.018775386198894715
             ]
         ],
-        "logistic_loss": 11842.721197561825,
+        "training_logistic_loss": 11842.721197561825,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "28",
@@ -2384,7 +2384,7 @@
                 0.019016196968232636
             ]
         ],
-        "logistic_loss": 11841.347982953877,
+        "training_logistic_loss": 11841.347982953877,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "29",
@@ -2463,7 +2463,7 @@
                 0.019098038552079668
             ]
         ],
-        "logistic_loss": 11840.921131643823,
+        "training_logistic_loss": 11840.921131643823,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "30",
@@ -2542,7 +2542,7 @@
                 0.0191950886993536
             ]
         ],
-        "logistic_loss": 11840.440717320458,
+        "training_logistic_loss": 11840.440717320458,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "31",
@@ -2621,7 +2621,7 @@
                 0.01893583919768021
             ]
         ],
-        "logistic_loss": 11841.786635955408,
+        "training_logistic_loss": 11841.786635955408,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "32",
@@ -2700,7 +2700,7 @@
                 0.018994735339395913
             ]
         ],
-        "logistic_loss": 11841.463233718572,
+        "training_logistic_loss": 11841.463233718572,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "33",
@@ -2779,7 +2779,7 @@
                 0.02001901276531725
             ]
         ],
-        "logistic_loss": 11837.444325049177,
+        "training_logistic_loss": 11837.444325049177,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "34",
@@ -2858,7 +2858,7 @@
                 0.019078231268190214
             ]
         ],
-        "logistic_loss": 11841.02260653678,
+        "training_logistic_loss": 11841.02260653678,
         "training_accuracy": 89.916966106633,
         "training_AUC": 0.7765542326482321,
         "card_popularity": "35",
@@ -2937,7 +2937,7 @@
                 0.016232966006423336
             ]
         ],
-        "logistic_loss": 11790.479958962607,
+        "training_logistic_loss": 11790.479958962607,
         "training_accuracy": 89.9048266485384,
         "training_AUC": 0.7771056095809762,
         "card_popularity": "36",
@@ -3024,7 +3024,7 @@
                 0.011062621740568698
             ]
         ],
-        "logistic_loss": 11827.632657772278,
+        "training_logistic_loss": 11827.632657772278,
         "training_accuracy": 89.65960959502767,
         "training_AUC": 0.7768928933325282,
         "card_popularity": "37",
@@ -3107,7 +3107,7 @@
                 0.018760411343701593
             ]
         ],
-        "logistic_loss": 11849.539299689006,
+        "training_logistic_loss": 11849.539299689006,
         "training_accuracy": 89.65960959502767,
         "training_AUC": 0.7765450188556947,
         "card_popularity": "38",
@@ -3190,7 +3190,7 @@
                 0.018765802249986297
             ]
         ],
-        "logistic_loss": 11831.192567393315,
+        "training_logistic_loss": 11831.192567393315,
         "training_accuracy": 89.89511508206274,
         "training_AUC": 0.7766270319287247,
         "card_popularity": "39",
@@ -3285,7 +3285,7 @@
                 0.0021681182346251836
             ]
         ],
-        "logistic_loss": 11819.256678238073,
+        "training_logistic_loss": 11819.256678238073,
         "training_accuracy": 89.887831407206,
         "training_AUC": 0.7792171454733126,
         "card_popularity": "40",
@@ -3368,7 +3368,7 @@
                 0.009965883774980483
             ]
         ],
-        "logistic_loss": 11819.247044819549,
+        "training_logistic_loss": 11819.247044819549,
         "training_accuracy": 89.887831407206,
         "training_AUC": 0.7792171454733126,
         "card_popularity": "41",
@@ -3447,7 +3447,7 @@
                 0.009652145338307378
             ]
         ],
-        "logistic_loss": 11801.720386609391,
+        "training_logistic_loss": 11801.720386609391,
         "training_accuracy": 89.90239875691948,
         "training_AUC": 0.7789094136478056,
         "card_popularity": "42",
@@ -3542,7 +3542,7 @@
                 0.01916999090124546
             ]
         ],
-        "logistic_loss": 11860.23447641631,
+        "training_logistic_loss": 11860.23447641631,
         "training_accuracy": 89.65960959502767,
         "training_AUC": 0.7769970578370249,
         "card_popularity": "43",
@@ -3621,7 +3621,7 @@
                 0.009798069727450124
             ]
         ],
-        "logistic_loss": 11808.976693059521,
+        "training_logistic_loss": 11808.976693059521,
         "training_accuracy": 89.65960959502767,
         "training_AUC": 0.7786888841032861,
         "card_popularity": "44",
@@ -3700,7 +3700,7 @@
                 0.009862220764597432
             ]
         ],
-        "logistic_loss": 11851.462076841555,
+        "training_logistic_loss": 11851.462076841555,
         "training_accuracy": 89.90239875691948,
         "training_AUC": 0.775434230563114,
         "card_popularity": "45",
@@ -3779,7 +3779,7 @@
                 0.009653290541771487
             ]
         ],
-        "logistic_loss": 11801.719018932428,
+        "training_logistic_loss": 11801.719018932428,
         "training_accuracy": 89.90239875691948,
         "training_AUC": 0.7789094136478056,
         "card_popularity": "46",
@@ -3858,7 +3858,7 @@
                 0.009691291753754303
             ]
         ],
-        "logistic_loss": 11804.694682767022,
+        "training_logistic_loss": 11804.694682767022,
         "training_accuracy": 89.90239875691948,
         "training_AUC": 0.7788325927311461,
         "card_popularity": "47",
@@ -3937,7 +3937,7 @@
                 0.009653290541771487
             ]
         ],
-        "logistic_loss": 11801.719018932428,
+        "training_logistic_loss": 11801.719018932428,
         "training_accuracy": 89.90239875691948,
         "training_AUC": 0.7789094136478056,
         "card_popularity": "48",
@@ -4016,7 +4016,7 @@
                 0.009653290541771487
             ]
         ],
-        "logistic_loss": 11801.719018932428,
+        "training_logistic_loss": 11801.719018932428,
         "training_accuracy": 89.90239875691948,
         "training_AUC": 0.7789094136478056,
         "card_popularity": "49",
@@ -4095,7 +4095,7 @@
                 0.009653290541771487
             ]
         ],
-        "logistic_loss": 11801.719018932428,
+        "training_logistic_loss": 11801.719018932428,
         "training_accuracy": 89.90239875691948,
         "training_AUC": 0.7789094136478056,
         "card_popularity": "50",

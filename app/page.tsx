@@ -10,7 +10,32 @@ import { reorder } from "@atlaskit/pragmatic-drag-and-drop/reorder";
 import { sortModels } from "./sortModels";
 import * as d3 from "d3";
 
-const filenames = ["MAMMO", "ADULT", "BANK", "FICO", "SHROOM"];
+const filenames = [
+  "MAMMO",
+  "MAMMO_50_05",
+  "MAMMO_200_1",
+  "MAMMO_200_05",
+
+  "ADULT",
+  "ADULT_50_05",
+  "ADULT_200_1",
+  "ADULT_200_05",
+
+  "BANK",
+  "BANK_50_05",
+  "BANK_200_1",
+  "BANK_200_05",
+
+  "FICO",
+  "FICO_50_05",
+  "FICO_200_1",
+  "FICO_200_05",
+
+  "SHROOM",
+  "SHROOM_50_05",
+  "SHROOM_200_1",
+  "SHROOM_200_05",
+];
 
 export default function Home() {
   const [filename, setFilename] = useState(filenames[0]);
