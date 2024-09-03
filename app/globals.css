@@ -439,3 +439,25 @@ h3 {
 .buttonCardClose:hover {
   opacity: 1;
 }
+
+.AboutMeText {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.AboutMeButton {
+  color: white;
+
+  background-color: cornflowerblue;
+  /* height: 32px; */
+  text-align: center;
+  margin-right: 13px;
+  padding: 0px 5px;
+  border-radius: 25px;
+  /* width: 55px; */
+  border: 3px solid cornflowerblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+

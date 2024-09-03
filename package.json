@@ -12,11 +12,15 @@
     "@atlaskit/pragmatic-drag-and-drop": "^1.1.12",
     "@atlaskit/pragmatic-drag-and-drop-hitbox": "^1.0.3",
     "@atlaskit/pragmatic-drag-and-drop-react-drop-indicator": "^1.1.1",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.0.1",
     "d3": "^7.9.0",
     "next": "14.2.3",
     "prettier": "^3.3.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-modal": "^3.16.1"
   },
   "devDependencies": {
     "@types/d3": "^7.4.3",
