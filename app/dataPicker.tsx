@@ -42,7 +42,27 @@ export const DataPicker = ({
   return (
     <div className="dataPicker">
       <div>
-        <h1>RISKOMON · Card Deck Explorer for a FasterRisk Rashomon Set</h1>
+        <h1>
+          RISKOMON · Card Deck Explorer for a FasterRisk Rashomon Set (
+          <a
+            href="https://arxiv.org/abs/2210.05846"
+            style={{ color: "cornflowerblue", fontWeight: "bold" }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            paper
+          </a>
+          ,{" "}
+          <a
+            href="https://github.com/interpretml/FasterRisk/tree/main"
+            style={{ color: "cornflowerblue", fontWeight: "bold" }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            source code
+          </a>
+          )
+        </h1>
       </div>
       <span>
         <button className="AboutMeButton" onClick={handleClickOpen}>
@@ -91,7 +111,7 @@ export const DataPicker = ({
           <br />
           <h2>About FasterRisk</h2>
           <p>
-            FasterRisk is an algorthm (
+            FasterRisk is an algorithm (
             <a
               href="https://github.com/interpretml/FasterRisk/tree/main"
               style={{ color: "cornflowerblue", fontWeight: "bold" }}
