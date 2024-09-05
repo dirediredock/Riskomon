@@ -147,7 +147,7 @@ export const DataPicker = ({
           <br />
           <h2>About Riskomon</h2>
           <p>
-            Riskomon is a visualization tool (
+            Riskomon is an interactive visualization tool (
             <a
               href="https://github.com/dirediredock/Riskomon"
               style={{ color: "cornflowerblue", fontWeight: "bold" }}
