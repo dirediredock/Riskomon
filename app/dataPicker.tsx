@@ -147,7 +147,7 @@ export const DataPicker = ({
           <br />
           <h2>About Riskomon</h2>
           <p>
-            Riskomon is a React-based visualization tool (
+            Riskomon is a visualization tool (
             <a
               href="https://github.com/dirediredock/Riskomon"
               style={{ color: "cornflowerblue", fontWeight: "bold" }}
@@ -162,7 +162,7 @@ export const DataPicker = ({
           </p>
           <br />
           <p style={{ color: "tomato", fontWeight: "bold" }}>
-            Riskomon is a dynamic website that can differ in display across
+            Riskomon is a dynamic web app that can differ in display across
             browsers. If you notice the visual elements are too large, manually
             zooming out to about 80% of can help.
           </p>
