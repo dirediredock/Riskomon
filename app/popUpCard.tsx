@@ -13,7 +13,7 @@ export const PopUpCard = ({
   model,
   marginalia,
   removeModel,
-  inert
+  inert,
 }: PopUpCardProps) => {
   const handleClose = () => {
     if (inert) return;
@@ -125,8 +125,12 @@ export const PopUpCard = ({
   }, [model.card_label, model.risk_scale, removeModel]);
 
   return (
-    <div className="popUpCard" style={{ position: "relative" }}>
-      <button className="buttonCardClose" onClick={handleClose} style={{cursor: inert ? "default" : "pointer"}}>
+    <div className="popUpCard">
+      <button
+        className="buttonCardClose"
+        onClick={handleClose}
+        style={{ cursor: inert ? "default" : "pointer" }}
+      >
         ✖️
       </button>
       <h3>Model {model.card_label} Card</h3>
@@ -155,7 +159,7 @@ export const PopUpCard = ({
         <div
           className={marginalia === "LOSS" ? "popUpBannerSelected" : undefined}
         >
-          LOSS: {model.logistic_loss.toFixed(1)}
+          LOSS: {model.training_logistic_loss.toFixed(1)}
         </div>
         <div
           className={marginalia === "ACC" ? "popUpBannerSelected" : undefined}

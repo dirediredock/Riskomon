@@ -1,7 +1,6 @@
 import { FeatureCount, ModelData } from "./modelData";
 import adult from "./input_data/ADULT.json";
 import bank from "./input_data/BANK.json";
-import demo from "./input_data/DEMO.json";
 import fico from "./input_data/FICO.json";
 import mammo from "./input_data/MAMMO.json";
 import shroom from "./input_data/SHROOM.json";
@@ -24,8 +23,6 @@ export const fetchData = (filename: string): FetchDataResult => {
         return adult as ModelData[];
       case "BANK":
         return bank as ModelData[];
-      case "DEMO":
-        return demo as ModelData[];
       case "FICO":
         return fico as ModelData[];
       case "MAMMO":
@@ -73,7 +70,7 @@ export const fetchData = (filename: string): FetchDataResult => {
       m.feature_data.forEach(([_, f]) => {
         featuresCountDict.set(f, (featuresCountDict.get(f) || 0) + 1);
 
-        const loss = m.logistic_loss;
+        const loss = m.training_logistic_loss;
         LOSS_max = Math.max(LOSS_max, loss);
         LOSS_min = Math.min(LOSS_min, loss);
 
