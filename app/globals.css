@@ -21,7 +21,7 @@ h3 {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
-  height: 100vh;
+  height: 133vh;
   padding-left: 60px;
   /* padding-right: 40px; */
 }
@@ -175,7 +175,6 @@ h3 {
   justify-content: center;
   align-items: center;
   font-size: 12px;
-  /* color: black; */
   color: white;
   background-color: skyblue;
   border-radius: 100px;
@@ -183,7 +182,6 @@ h3 {
   height: 25px;
   font-weight: bold;
   z-index: 1;
-  /* font-family: "Fira Code", "Courier New", monospace; */
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
 }
@@ -243,10 +241,7 @@ h3 {
   z-index: 10;
   box-shadow: 0px -6px 9px whitesmoke;
   margin-left: -55px;
-  /* margin-right: -40px; */
   padding-top: 10px;
-  /* padding-left: 40px; */
-  /* padding-right: 40px; */
 }
 
 .cardRouselHeaderContainer {
@@ -258,9 +253,6 @@ h3 {
 .collapseButton {
   width: 35px;
   height: 35px;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* margin-bottom: 25px; */
 }
 
 .cardRouselLabel {
@@ -283,8 +275,6 @@ h3 {
 .noModelsMessage {
   color: gray;
   margin-left: 25px;
-  /* margin-left: auto;
-  margin-right: auto; */
   font-style: italic;
   padding-bottom: 25px;
 }
@@ -300,8 +290,6 @@ h3 {
   text-align: left;
   padding: 30px 35px;
   margin-bottom: 25px;
-  /* margin-left: 25px; */
-  /* margin-right: 5px; */
 }
 
 .modelSelect {
@@ -313,7 +301,6 @@ h3 {
 .featuresCount {
   color: gray;
   font-weight: bold;
-  /* font-family: "Fira Code", "Courier New", monospace; */
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1em;
 }
@@ -321,7 +308,6 @@ h3 {
 .modelsCount {
   color: skyblue;
   font-weight: bold;
-  /* font-family: "Fira Code", "Courier New", monospace; */
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1em;
 }
@@ -329,7 +315,6 @@ h3 {
 .featureFrequency {
   color: skyblue;
   font-weight: bold;
-  /* font-family: "Fira Code", "Courier New", monospace; */
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8em;
   width: 25px;
@@ -337,7 +322,6 @@ h3 {
 }
 
 .chartContainer {
-  /* background-color: whitesmoke; */
   margin-top: -27px;
   margin-bottom: 13px;
   width: 300px;
@@ -357,7 +341,6 @@ h3 {
 .featureCoeffVis {
   margin-left: 25px;
   font-weight: bold;
-  /* font-family: "Fira Code", "Courier New", monospace; */
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.05em;
 }
@@ -380,6 +363,7 @@ h3 {
 }
 
 .landscapeCard {
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -421,7 +405,7 @@ h3 {
 }
 
 .emptySpacer {
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
 .buttonCardClose {
@@ -434,7 +418,6 @@ h3 {
   border: none;
   font-size: 18px;
   opacity: 0.45;
-  /* background-color: gray; */
 }
 
 .buttonCardClose:hover {
@@ -450,14 +433,11 @@ h3 {
 
 .AboutMeButton {
   color: white;
-
   background-color: cornflowerblue;
-  /* height: 32px; */
   text-align: center;
   margin-right: 12px;
   padding: 0px 5px;
   border-radius: 25px;
-  /* width: 55px; */
   border: 3px solid cornflowerblue;
   font-family: Arial, Helvetica, sans-serif;
 }

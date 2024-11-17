@@ -108,7 +108,6 @@ export const DataPicker = ({
           ✖️
         </button>
         <DialogContent className="AboutMeText">
-          <br />
           <h2>About FasterRisk</h2>
           <p>
             FasterRisk is an algorithm (
@@ -120,13 +119,12 @@ export const DataPicker = ({
             >
               source code
             </a>
-            ) that efficiently surfaces a pool of equally-good sparse continuous
-            solutions learned from data, each with a different support set,
-            using a beam-search algorithm. Each of these continuous solutions is
-            transformed into a separate risk score through a &quot;star
-            ray&quot; search, where a range of multipliers are considered before
-            rounding the coefficients sequentially to maintain low logistic loss
-            (
+            ) designed to efficiently generate a diverse pool of equally-good
+            sparse continuous models from data, each with a unique support set,
+            using a beam-search approach. These continuous solutions are
+            transformed into separate risk scores through a &quot;star ray&quot;
+            search, where a range of multipliers is applied, and coefficients
+            are sequentially rounded to maintain low logistic loss (
             <a
               href="https://arxiv.org/abs/2210.05846"
               style={{ color: "cornflowerblue", fontWeight: "bold" }}
@@ -135,19 +133,19 @@ export const DataPicker = ({
             >
               paper
             </a>
-            ). We use FasterRisk to precompute a Rashomon Set—a dataset composed
-            of equally-good risk score models from binarized training
-            input—which we then visualize and explore using the Riskomon
-            interactive tool. The motivation for developing the FasterRisk
-            algorithm is tackling the &quot;black box&quot; problem of the
-            traditional machine learning (ML) paradigm, which is a big problem
-            for ML in high-stakes decision-making contexts such as parole policy
-            and medical diagnoses.
+            ). We leverage FasterRisk to precompute a Rashomon Set—a dataset
+            comprising equally-good risk score models derived from binarized
+            training data—and visualize and explore it using this Riskomon
+            interactive tool. The motivation for developing FasterRisk lies in
+            addressing the &quot;black box&quot; problem in traditional machine
+            learning (ML), a critical challenge of ML deployed in high-stakes
+            domains such as financial management, parole policy, and medical
+            diagnoses.
           </p>
           <br />
           <h2>About Riskomon</h2>
           <p>
-            Riskomon is an interactive visualization tool (
+            This web app is an interactive visualization tool (
             <a
               href="https://github.com/dirediredock/Riskomon"
               style={{ color: "cornflowerblue", fontWeight: "bold" }}
@@ -159,12 +157,12 @@ export const DataPicker = ({
             ) for the exploration of a Rashomon Set of scoring system models
             obtained from the FasterRisk algorithm. We precompute an assortment
             of different Rashomon Sets for the user to consider.
-          </p>
-          <br />
-          <p style={{ color: "tomato", fontWeight: "bold" }}>
-            Riskomon is a dynamic web app that can differ in display across
-            browsers. If you notice the visual elements are too large, manually
-            zooming out to about 80% of can help.
+            <br />
+            <br />
+            Matt Oddo (UBC) designed and implemented Riskomon in collaboration
+            with Jiachang Liu (Duke), Tamara Munzner (UBC), Francis Nguyen
+            (UBC), Cynthia Rudin (Duke), Margo Seltzer (UBC, Duke), and the
+            Interpretable ML Lab (Duke).
           </p>
         </DialogContent>
       </BootstrapDialog>

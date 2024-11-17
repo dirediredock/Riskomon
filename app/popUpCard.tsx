@@ -33,7 +33,7 @@ export const PopUpCard = ({
     const xScale = d3
       .scaleLinear()
       .domain([d3.min(x_data) as number, d3.max(x_data) as number])
-      .range([0 + margin, width - margin * 5]);
+      .range([margin * 2, width - margin * 1.5]);
 
     const yScale = d3
       .scaleLinear()
@@ -72,7 +72,7 @@ export const PopUpCard = ({
       .selectAll("circle.blue")
       .data(y_data)
       .join("circle")
-      .attr("cx", xMax + 25)
+      .attr("cx", xMax + 30)
       .attr("cy", (d) => yScale(d))
       .attr("r", (d) => rScale(d))
       .attr("fill", "skyblue")
@@ -93,7 +93,7 @@ export const PopUpCard = ({
 
     svg
       .append("g")
-      .attr("transform", `translate(${width - 50}, 0)`)
+      .attr("transform", `translate(${width + 25}, 0)`)
       .call(
         d3
           .axisRight(yScale)
