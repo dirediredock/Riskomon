@@ -131,7 +131,7 @@ export const ModelColumn = ({
 
     switch (marginalia) {
       case "LOSS":
-        y_data = [model.logistic_loss];
+        y_data = [model.training_logistic_loss];
         yScale = d3
           .scaleLinear()
           .domain([axisBounds.LOSS_min, axisBounds.LOSS_max])
@@ -184,7 +184,7 @@ export const ModelColumn = ({
   }, [
     marginalia,
     model.card_label,
-    model.logistic_loss,
+    model.training_logistic_loss,
     model.training_accuracy,
     model.training_AUC,
     model.risk_scale,
