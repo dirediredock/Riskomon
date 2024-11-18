@@ -1,41 +1,12 @@
 The default dataset, MAMMO, predicts cancer risk from mammography information[^MAMMO]. The FICO dataset predicts whether a borrower will default on a loan or credit obligation[^FICO]. The SHROOM dataset predicts the risk of poisoning from mushroom toxicity[^SHROOM]. The BANK dataset predicts whether a person opens an account after a marketing call[^BANK]. The ADULT dataset predicts whether a U.S. resident earns more than $50,000 annually[^ADULT].
 
-```
-RashomonSet         MAMMO.json
-model_count         30
-feature_count       13
-FasterRisk          v0.1.10
-select_top_m        200
-gap_tolerance       0.1
-
-RashomonSet         ADULT.json
-model_count         47
-feature_count       29
-FasterRisk          v0.1.10
-select_top_m        200
-gap_tolerance       0.05
-
-RashomonSet         BANK.json
-model_count         87
-feature_count       34
-FasterRisk          v0.1.10
-select_top_m        50
-gap_tolerance       0.05
-
-RashomonSet         FICO.json
-model_count         50
-feature_count       54
-FasterRisk          v0.1.10
-select_top_m        50
-gap_tolerance       0.05
-
-RashomonSet         SHROOM.json
-model_count         3
-feature_count       7
-FasterRisk          v0.1.10
-select_top_m        50
-gap_tolerance       0.05
-```
+| Rashomon Set | Number of models | Number of features | FasterRisk version | `select_top_m` | `gap_tolerance` |
+|-------------|-------------|---------------|---------------------|--------------|---------------|
+| MAMMO.json  | 30          | 13            | v0.1.10            | 200          | 0.1           |
+| ADULT.json  | 47          | 29            | v0.1.10            | 200          | 0.05          |
+| BANK.json   | 87          | 34            | v0.1.10            | 50           | 0.05          |
+| FICO.json   | 50          | 54            | v0.1.10            | 50           | 0.05          |
+| SHROOM.json | 3           | 7             | v0.1.10            | 50           | 0.05          |
 
 In Riskomon, positive feature coefficients map semantically to high risk, visually encoded with red bubbles. The MAMMO, FICO, and SHROOM datasets align with this semantic mapping. However, the BANK and ADULT datasets have a different valence: positive coefficients map to a higher likelihood of opening an account in BANK, and to higher salaries in ADULT. The alternative monochrome colormap (toggle on the Controls strip) can help navigate dataset scenarios with such different valences.
 
