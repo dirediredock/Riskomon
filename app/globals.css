@@ -122,11 +122,12 @@ h3 {
 }
 
 .featureDragPreview {
+  font-size: 12px;
   position: absolute;
   top: -999px; /* Ensure it is not visible when not dragging */
-  background-color: gainsboro;
-  padding: 10px 20px 10px 20px;
-  border-radius: 4px;
+  background-color: white;
+  padding: 8px 16px 8px 16px;
+  border-radius: 50px;
 }
 
 .dragHandleContainer {
@@ -410,7 +411,7 @@ h3 {
 
 .buttonCardClose {
   width: 45px;
-  height: 45px;
+  height: 48px;
   position: absolute;
   top: 0px;
   right: 0px;

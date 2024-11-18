@@ -135,12 +135,13 @@ export const DataPicker = ({
             </a>
             ). We leverage FasterRisk to precompute a Rashomon Set—a dataset
             comprising equally-good risk score models derived from binarized
-            training data—and visualize and explore it using this Riskomon
-            interactive tool. The motivation for developing FasterRisk lies in
-            addressing the &quot;black box&quot; problem in traditional machine
-            learning (ML), a critical challenge of ML deployed in high-stakes
-            domains such as financial management, parole policy, and medical
-            diagnoses.
+            training data—and visualize and explore it with Riskomon.
+            <br />
+            <br />
+            The motivation for developing FasterRisk is addressing the
+            &quot;black box&quot; problem of traditional machine learning (ML),
+            a critical challenge of ML models deployed in high-stakes domains
+            such as financial management, parole policy, and medical diagnoses.
           </p>
           <br />
           <h2>About Riskomon</h2>
@@ -152,11 +153,20 @@ export const DataPicker = ({
               target="_blank"
               rel="noopener noreferrer"
             >
-              source code
+              codebase
             </a>
             ) for the exploration of a Rashomon Set of scoring system models
             obtained from the FasterRisk algorithm. We precompute an assortment
-            of different Rashomon Sets for the user to consider.
+            of different Rashomon Sets for the user to consider (
+            <a
+              href="https://github.com/dirediredock/Riskomon/tree/main/app/input_data"
+              style={{ color: "cornflowerblue", fontWeight: "bold" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              datasets
+            </a>
+            ).
             <br />
             <br />
             Matt Oddo (UBC) designed and implemented Riskomon in collaboration
