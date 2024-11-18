@@ -138,9 +138,9 @@ export const DataPicker = ({
             training data—and visualize and explore it with Riskomon.
             <br />
             <br />
-            The motivation for developing FasterRisk is addressing the
-            &quot;black box&quot; problem of traditional machine learning (ML),
-            a critical challenge of ML models deployed in high-stakes domains
+            The motivation for developing the interpretable FasterRisk is addressing the
+            inscrutable &quot;black box&quot; problem of traditional machine learning (ML),
+            which is a critical challenge of ML models deployed in high-stakes domains
             such as financial management, parole policy, and medical diagnoses.
           </p>
           <br />
