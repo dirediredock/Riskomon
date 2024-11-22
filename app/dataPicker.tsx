@@ -172,7 +172,7 @@ export const DataPicker = ({
             <br />
             Matt Oddo (UBC) designed and implemented Riskomon in collaboration
             with Jiachang Liu (Duke), Tamara Munzner (UBC), Francis Nguyen
-            (UBC), Cynthia Rudin (Duke), Margo Seltzer (UBC, Duke), and the
+            (UBC), Cynthia Rudin (Duke), Margo Seltzer (UBC), and the
             Interpretable ML Lab (Duke).
           </p>
         </DialogContent>
