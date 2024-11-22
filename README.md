@@ -50,15 +50,31 @@ The current ordering of columns in the MODELS pane shows that only the first thr
 
 <img src="figures/README_Fig7.png" width="100%" ></a>
 
-## Adaptive Design
+## Datasets
 
 The current version of Riskomon comes with five precomputed datasets. Future versions will allow users to upload their own FasterRisk Rashomon Set datasets.
 
+The default dataset, MAMMO, predicts cancer risk from mammography information[^MAMMO]. The FICO dataset predicts whether a borrower will default on a loan or credit obligation[^FICO]. The SHROOM dataset predicts the risk of poisoning from mushroom toxicity[^SHROOM]. The BANK dataset predicts whether a person opens an account after a marketing call[^BANK]. The ADULT dataset predicts whether a U.S. resident earns more than $50,000 annually[^ADULT].
+
+| Rashomon Set | Number of models | Number of features | FasterRisk version | `select_top_m` | `gap_tolerance` |
+|-------------|-------------|---------------|---------------------|--------------|---------------|
+| MAMMO.json  | 30          | 13            | v0.1.10            | 200          | 0.1           |
+| ADULT.json  | 47          | 29            | v0.1.10            | 200          | 0.05          |
+| BANK.json   | 87          | 34            | v0.1.10            | 50           | 0.05          |
+| FICO.json   | 50          | 54            | v0.1.10            | 50           | 0.05          |
+| SHROOM.json | 3           | 7             | v0.1.10            | 50           | 0.05          |
+
+In Riskomon, positive feature coefficients map semantically to high risk, visually encoded with red bubbles. The MAMMO, FICO, and SHROOM datasets align with this semantic mapping. However, the BANK and ADULT datasets have a different valence: positive coefficients map to a higher likelihood of opening an account in BANK, and to higher salaries in ADULT. The alternative monochrome colormap (toggle on the Controls strip) can help navigate dataset scenarios with such different valences.
+
+## Adaptive Design
+
 <img src="figures/README_Fig8.png" width="100%" ></a>
 
-The dynamic aspect ratio of Riskomon adapts the FEATURES, MODELS, and CARDS panes to any screen size, maximizing visual real estate to accommodate larger Rashomon sets, such as the FICO dataset.
+Riskomon is designed for a target screen size of at least 1000 pixels of vertical resolution. Scrollbars will appear if any pane is too large to fit within the window. The FEATURES and MODELS panes scroll together vertically, while only the MODELS pane will scroll horizontally. Up to 50 models will be visible without the need to scroll the MODELS pane with a window of 1710 pixels. The CARDS pane scrolls separately, and is always 300 pixels tall.
 
-The default dataset, MAMMO, predicts cancer risk from mammography information[^MAMMO]. The FICO dataset predicts whether a borrower will default on a loan or credit obligation[^FICO]. The SHROOM dataset predicts the risk of poisoning from mushroom toxicity[^SHROOM]. The BANK dataset predicts whether a person opens an account after a marketing call[^BANK]. The ADULT dataset predicts whether a U.S. resident earns more than $50,000 annually[^ADULT]. In Riskomon, positive feature coefficients map semantically to high risk, visually encoded with red bubbles. The MAMMO, FICO, and SHROOM datasets align with this semantic mapping. However, the BANK and ADULT datasets have a different valence: positive coefficients map to a higher likelihood of opening an account in BANK, and to higher salaries in ADULT. The alternative monochrome colormap can help navigate dataset scenarios with such different valences.
+### Project Authors
+
+Matt Oddo (UBC) designed and implemented Riskomon in collaboration with Jiachang Liu (Duke), Tamara Munzner (UBC), Francis Nguyen (UBC), Cynthia Rudin (Duke), Margo Seltzer (UBC), and the Interpretable ML Lab (Duke).
 
 ### References
 
