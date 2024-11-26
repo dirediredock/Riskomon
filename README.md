@@ -74,7 +74,7 @@ Riskomon is designed for a target screen size of at least 1000 pixels of vertica
 
 ## Project Authors
 
-Matt Oddo (UBC) designed and implemented Riskomon in collaboration with Jiachang Liu (Duke), Tamara Munzner (UBC), Francis Nguyen (UBC), Cynthia Rudin (Duke), Margo Seltzer (UBC), and the Interpretable ML Lab (Duke).
+[Matt Oddo](https://github.com/dirediredock) (UBC) designed and implemented Riskomon in collaboration with [Jiachang Liu](https://jiachangliu.github.io/) (Duke), [Tamara Munzner](https://www.cs.ubc.ca/~tmm/) (UBC), [Francis Nguyen](https://fmnguyen.com/) (UBC), [Cynthia Rudin](https://users.cs.duke.edu/~cynthia/) (Duke), [Margo Seltzer](https://www.seltzer.com/margo/) (UBC), and the [Interpretable ML Lab](https://users.cs.duke.edu/~cynthia/lab.html) (Duke).
 
 ## References
 
