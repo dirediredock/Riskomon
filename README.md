@@ -76,6 +76,17 @@ Riskomon is designed for a target screen size of at least 1000 pixels of vertica
 
 [Matt Oddo](https://github.com/dirediredock) (UBC) designed and implemented Riskomon in collaboration with [Jiachang Liu](https://jiachangliu.github.io/) (Duke), [Tamara Munzner](https://www.cs.ubc.ca/~tmm/) (UBC), [Francis Nguyen](https://fmnguyen.com/) (UBC), [Cynthia Rudin](https://users.cs.duke.edu/~cynthia/) (Duke), [Margo Seltzer](https://www.seltzer.com/margo/) (UBC), and the [Interpretable ML Lab](https://users.cs.duke.edu/~cynthia/lab.html) (Duke).
 
+If Riskomon has been helpful in your work, we kindly ask to cite using the following BibTeX entry:
+
+```BibTeX
+@unpublished{Riskomon,
+title={Riskomon: Card Deck Explorer for a {FasterRisk} {R}ashomon Set},
+author={Matt Oddo and Jiachang Liu and Tamara Munzner and Francis Nguyen and Cynthia Rudin and Margo Seltzer},
+note={Available at https://riskomon.netlify.app},
+year={2024}
+}
+```
+
 ## References
 
 [^FASTERRISK]: Liu, J., Zhong, C., Li, B., Seltzer, M., & Rudin, C. (2022). FasterRisk: Fast and accurate interpretable risk scores. Advances in Neural Information Processing Systems, 35, 17760-17773.
