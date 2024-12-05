@@ -70,7 +70,7 @@ In Riskomon, positive feature coefficients map semantically to high risk, visual
 
 <img src="figures/README_Scrollbars.png" width="100%" ></a>
 
-Riskomon is designed for a target screen size of at least 1000 pixels of vertical resolution. Scrollbars will appear if any pane is too large to fit within the window. The FEATURES and MODELS panes scroll together vertically, while only the MODELS pane will scroll horizontally. Up to 50 models will be visible without the need to scroll the MODELS pane with a window of 1710 pixels. The CARDS pane scrolls separately, and is always 300 pixels tall.
+Riskomon is designed for a target screen size of at least 1000 pixels of vertical resolution. Scrollbars will appear if any pane is too large to fit within the window. The FEATURES and MODELS panes scroll together vertically, while only the MODELS pane will scroll horizontally. Up to 50 models will be visible without the need to scroll the MODELS pane with a window of 1710 pixels. The CARDS pane scrolls separately, and is always 300 pixels tall. Currently Riskomon is best experienced in Chromium-based browsers such as Arc and Chrome.
 
 ## Project Authors
 
